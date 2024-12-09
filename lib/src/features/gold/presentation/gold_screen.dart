@@ -6,7 +6,6 @@ class GoldScreen extends StatelessWidget {
   const GoldScreen({super.key});
   @override
   Widget build(BuildContext context) {
-
     return SafeArea(
       child: Scaffold(
         body: Padding(
@@ -19,7 +18,6 @@ class GoldScreen extends StatelessWidget {
               Text('Live Kurs:',
                   style: Theme.of(context).textTheme.headlineMedium),
               const SizedBox(height: 20),
-
               StreamBuilder(
                 stream: getGoldPriceStream(),
                 builder: (context, snapshot) {
